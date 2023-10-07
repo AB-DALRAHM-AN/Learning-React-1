@@ -1,4 +1,5 @@
 import "./App.css";
+import greeting from "./components/Greeting";
 
 function App() {
   const name = "abdo";
@@ -14,8 +15,11 @@ function App() {
     <div className="App">
       {readName(name)}
     </div>
-    <div className="text">
-      <h1>Hello, {name}</h1>
+    <div className="name">
+      <h1>{name}</h1>
+    </div>
+    <div className="greeting">
+      {greeting()}
     </div>
     </>
   );
